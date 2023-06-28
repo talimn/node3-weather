@@ -12,7 +12,7 @@ const forecast = (lon, lat, callback) => {
         }
 
         else {
-            callback(undefined, 'It is ' + body.current.temperature + ' degrees outside, but it feels like ' + body.current.feelslike + ' degrees. Local Date/Time: ' + body.current.localtime + '.')
+            callback(undefined, 'It is ' + body.current.temperature + ' degrees outside, but it feels like ' + body.current.feelslike + ' degrees. Local Date/Time: ' + body.location.localtime + '.')
         }
     })
 }
