@@ -107,5 +107,5 @@ app.get('*', (req, res) => {
 
 // Server setup
 app.listen(port, () => {
-    console.log('Server is up on port ' + port)
+    console.log(`Server is up on port on ${port}!`)
 })

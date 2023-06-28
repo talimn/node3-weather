@@ -12,7 +12,7 @@ const forecast = (lon, lat, callback) => {
         }
 
         else {
-            callback(undefined, body.current.temperature)
+            callback(undefined, body.current.temperature + ' degrees.')
         }
     })
 }
